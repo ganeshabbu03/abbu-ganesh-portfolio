@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abbu Ganesh | Python AIML Developer Portfolio</title>
+    <meta name="description" content="Minimalist 3D portfolio of Abbu Ganesh, a Python AIML Developer specializing in Machine Learning, Deep Learning, and AI integrations.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Outfit:wght@200;300;400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Three.js Canvas Background -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- Grain Overlay for Film Aesthetic -->
+    <div class="grain-overlay"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="#hero">AG<span class="dot">.</span></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#ai-lab" class="nav-link">AI Lab</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-toggle" id="nav-toggle">
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator-container">
+        <span class="scroll-text">SCROLL</span>
+        <div class="scroll-line"></div>
+    </div>
+
+    <!-- Main Content Container -->
+    <main class="content-container">
+
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section">
+            <div class="hero-content">
+                <div class="badge fade-in">Python AIML Developer</div>
+                <h1 class="hero-title fade-in">
+                    <span class="light">Abbu</span> Ganesh
+                </h1>
+                <p class="hero-tagline fade-in">
+                    Designing intelligent models, programming workflows, and engineering next-generation AI integrations.
+                </p>
+                <div class="hero-actions fade-in">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Let's Connect</a>
+                </div>
+            </div>
+            <div class="hero-3d-hint fade-in">
+                <span class="hint-text">[ Drag scene to interact ]</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="section-header">
+                <span class="section-number">01 //</span>
+                <h2>About & Education</h2>
+            </div>
+            <div class="grid about-grid">
+                <div class="about-info">
+                    <p class="lead-text">
+                        I am a Python AIML Developer based in Rajampet, India, passionate about creating smart solutions and working with cutting-edge ML models.
+                    </p>
+                    <p class="body-text">
+                        With hands-on experience in machine learning pipelines, deep learning architectures, and API integrations, I bridge the gap between complex algorithms and clean, functional software. I love tackling challenging problems and translating data into actionable intelligence.
+                    </p>
+                    
+                    <!-- Education Sub-section -->
+                    <div class="education-block">
+                        <h3>Education</h3>
+                        <div class="edu-item">
+                            <span class="edu-date">2022 – 2026</span>
+                            <h4 class="edu-title">B.Tech in Artificial Intelligence & Machine Learning</h4>
+                            <p class="edu-school">Annamacharya Institute of Technology & Sciences, Rajampeta</p>
+                            <span class="edu-score">Score: 77%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="profile-card">
+                        <div class="profile-img-container">
+                            <img src="assets/images/profile.jpg" alt="Abbu Ganesh Portrait" class="profile-img">
+                            <div class="profile-corner top-left"></div>
+                            <div class="profile-corner top-right"></div>
+                            <div class="profile-corner bottom-left"></div>
+                            <div class="profile-corner bottom-right"></div>
+                        </div>
+                        <div class="profile-details">
+                            <span class="profile-label">LOCATION</span>
+                            <span class="profile-val">Rajampet, India</span>
+                            <span class="profile-label">SPECIALIZATION</span>
+                            <span class="profile-val">ML Ops & Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Showcase -->
+            <div class="skills-showcase">
+                <h3 class="skills-title">Core Stack & Capabilities</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Machine Learning</h4>
+                        <ul class="skill-list">
+                            <li>PyTorch</li>
+                            <li>TensorFlow / Keras</li>
+                            <li>Scikit-Learn</li>
+                            <li>Feature Engineering</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Development</h4>
+                        <ul class="skill-list">
+                            <li>Python Programming</li>
+                            <li>Java Development</li>
+                            <li>SQL / MySQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Tools & Platforms</h4>
+                        <ul class="skill-list">
+                            <li>Git / GitHub</li>
+                            <li>Docker / API Dev</li>
+                            <li>Linux Environments</li>
+                            <li>Data Visualization</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Interpersonal</h4>
+                        <ul class="skill-list">
+                            <li>Team Collaboration</li>
+                            <li>Creative Problem Solving</li>
+                            <li>Analytical Thinking</li>
+                            <li>Technical Writing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <div class="section-header">
+                <span class="section-number">02 //</span>
+                <h2>Work Experience</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="timeline-duration">Feb 2025 – May 2025</span>
+                        <span class="timeline-location">Kadapa, India</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-role-container">
+                            <h3 class="timeline-role">Python AIML Developer Intern</h3>
+                            <span class="timeline-company">Biotechwallah</span>
+                        </div>
+                        <p class="timeline-desc">
+                            Worked on analyzing biological data models using Python and implementing predictive machine learning scripts. Supported the team in scaling ML scripts, optimizing PyTorch architectures, and training dataset processing pipelines.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="section-header">
+                <span class="section-number">03 //</span>
+                <h2>Featured Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: RUDRA -->
+                <div class="project-card">
+                    <div class="project-media">
+                        <img src="assets/images/rudra_assistant.png" alt="Rudra Voice Assistant Hologram" class="project-img">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-header">
+                            <h3 class="project-name">AI Personal Assistant "RUDRA"</h3>
+                            <span class="project-date">Apr 2025</span>
+                        </div>
+                        <p class="project-desc">
+                            A highly-personalized AI voice assistant engineered to perform deep research, manage daily schedules, control media, fetch live news briefings, and write basic program snippets.
+                        </p>
+                        <div class="project-meta-info">
+                            <div><strong>Domain:</strong> AI & NLP</div>
+                            <div><strong>Role:</strong> Lead Developer</div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Speech Synthesis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Biotechwallah Pipeline -->
+                <div class="project-card">
+                    <div class="project-media">
+                        <img src="assets/images/biotech_internship.png" alt="Biotech Data Pipelines" class="project-img">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-header">
+                            <h3 class="project-name">Bio-Predictive ML Pipeline</h3>
+                            <span class="project-date">May 2025</span>
+                        </div>
+                        <p class="project-desc">
+                            Designed and deployed custom deep learning algorithms for automated analysis of biomedical datasets, decreasing data processing times and improving accuracy of sequence models.
+                        </p>
+                        <div class="project-meta-info">
+                            <div><strong>Domain:</strong> Bioinformatics & Deep Learning</div>
+                            <div><strong>Role:</strong> ML Developer Intern</div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-Learn</span>
+                            <span class="tag">Data Pipelines</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements Sub-section -->
+            <div class="achievements-showcase">
+                <h3>Awards & Accolades</h3>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="ach-num">01</div>
+                        <div class="ach-info">
+                            <h4>Second Prize Award — AITS</h4>
+                            <p>Awarded for excellence in AI solutions design and algorithm efficiency at the college technical symposium (April 2025).</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="ach-num">02</div>
+                        <div class="ach-info">
+                            <h4>Second Prize Winner Certificate — AITS</h4>
+                            <p>Recognized for outstanding presentation of deep learning methodologies in the engineering division.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Lab Section (Nano Banana & Veo integration) -->
+        <section id="ai-lab" class="section ai-lab-section">
+            <div class="section-header">
+                <span class="section-number">04 //</span>
+                <h2>Generative AI Lab</h2>
+            </div>
+            <p class="section-intro">
+                Experimenting with state-of-the-art models for visual assets. This interactive console demonstrates image generation via **Nano Banana** and video generation loops via **Veo**.
+            </p>
+
+            <div class="lab-workspace">
+                <!-- Terminal Console -->
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot-red"></span>
+                            <span class="dot-yellow"></span>
+                            <span class="dot-green"></span>
+                        </div>
+                        <div class="terminal-title">ai-asset-generator.sh</div>
+                    </div>
+                    
+                    <div class="terminal-body">
+                        <div class="terminal-row">
+                            <span class="terminal-prompt">guest@ganesh-ai-node:~$</span>
+                            <span class="terminal-input-text">select-model --available</span>
+                        </div>
+                        <div class="terminal-output">
+                            Available models:<br>
+                            - <span class="highlight-cyan">[1] google/nano-banana-pro</span> (High-Fidelity Text-to-Image)<br>
+                            - <span class="highlight-magenta">[2] google/veo-video-v1</span> (Cinematic 3D Video Loop Generator)
+                        </div>
+
+                        <!-- Interactive Selector -->
+                        <div class="terminal-row" style="margin-top: 15px;">
+                            <span class="terminal-prompt">guest@ganesh-ai-node:~$</span>
+                            <span class="terminal-input-text">generate --model</span>
+                            <select id="model-select" class="terminal-select">
+                                <option value="nano-banana">google/nano-banana-pro</option>
+                                <option value="veo">google/veo-video-v1</option>
+                            </select>
+                        </div>
+
+                        <!-- Prompt Input -->
+                        <div class="terminal-row">
+                            <span class="terminal-prompt">guest@ganesh-ai-node:~$</span>
+                            <span class="terminal-input-text">--prompt</span>
+                            <select id="prompt-select" class="terminal-select prompt-select">
+                                <!-- Prompts matching our assets -->
+                                <option value="hero">"futuristic neural network with glowing light nodes, cybernetic connections, dark indigo and cyan"</option>
+                                <option value="rudra">"glowing holographic AI voice assistant sphere, swirling soundwave energy, neon blue and violet"</option>
+                                <option value="biotech">"bio-technology visualization, DNA strands integrated with neural network nodes, emerald green and teal"</option>
+                            </select>
+                        </div>
+
+                        <div class="terminal-row" style="margin-top: 15px;">
+                            <button id="run-gen-btn" class="terminal-btn">Run Generator</button>
+                        </div>
+
+                        <!-- Output log -->
+                        <div id="terminal-log" class="terminal-log">
+                            <!-- JS will stream logs here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Preview screen -->
+                <div class="preview-screen-container">
+                    <div class="preview-screen-header">
+                        <span>LIVE_MONITOR_OUTPUT</span>
+                        <span id="preview-status" class="preview-status idle">IDLE</span>
+                    </div>
+                    <div class="preview-display" id="preview-display">
+                        <div id="preview-placeholder" class="preview-placeholder">
+                            <i class="fa-solid fa-microchip"></i>
+                            <p>Configure prompt and run generator to preview AI synthesized assets</p>
+                        </div>
+                        <div id="preview-media" class="preview-media hidden">
+                            <!-- Image or Custom Canvas Video will render here -->
+                            <img id="preview-img" src="" alt="AI Output" class="hidden">
+                            <div id="video-sim-canvas-container" class="hidden">
+                                <canvas id="video-sim-canvas"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview-overlay-info">
+                        <div class="asset-meta" id="asset-meta-display">
+                            <span>DIMENSION: --</span>
+                            <span>WATERMARK: SYNTHID_ENABLED</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-header">
+                <span class="section-number">05 //</span>
+                <h2>Get In Touch</h2>
+            </div>
+            
+            <div class="grid contact-grid">
+                <div class="contact-text">
+                    <p class="lead-text">Let's build something intelligent together.</p>
+                    <p class="body-text">
+                        I am currently looking for Python AIML Developer roles or research internships. If you have an opportunity or want to discuss AI pipelines, feel free to reach out.
+                    </p>
+
+                    <div class="contact-details-list">
+                        <div class="contact-item">
+                            <span class="contact-label">EMAIL</span>
+                            <a href="mailto:ganeshabbu03@gmail.com" class="contact-value">ganeshabbu03@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">PHONE</span>
+                            <a href="tel:+919849827740" class="contact-value">+91 9849827740</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">SOCIAL</span>
+                            <div class="social-links">
+                                <a href="https://linkedin.com/in/ganeshabbu" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="form-name">NAME</label>
+                            <input type="text" id="form-name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">EMAIL ADDRESS</label>
+                            <input type="email" id="form-email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">MESSAGE</label>
+                            <textarea id="form-message" rows="5" placeholder="Describe your project or role details..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit-btn">Send Message</button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-divider"></div>
+            <div class="footer-content">
+                <span class="copy">&copy; 2026 Abbu Ganesh. All Rights Reserved.</span>
+                <span class="tech-stack">Three.js / HTML5 / CSS3 / Minimal Style</span>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Three.js Library CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
